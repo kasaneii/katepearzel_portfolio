@@ -56,7 +56,7 @@ const page = () => {
                   <Link href='https://www.linkedin.com/in/kate-pearzel-cayabyab-aa7609177/' target='_blank'>
                     <img src="/assets/linkedin.png" alt="linkedin-logo" className='w-[20px] h-[20px] object-contain' />
                   </Link>
-                  <Link href='/kate-pearzel-resume.pdf' target='_blank'>
+                  <Link href='/KatePearzel-Resume.pdf' target='_blank'>
                     <div className='flex gap-2 items-center cursor-pointer'>
                       <img src="/assets/download.png" alt="download-icon" className='w-[20px] h-[20px] object-contain' />
                       <p className={`${styles.resumeParagraph}`}>Download</p>
@@ -68,7 +68,9 @@ const page = () => {
               <div className='pt-10 w-full flex gap-20'>
                 <div className='flex flex-col gap-10'>
                   <div className='flex flex-col gap-5'>
-                    <p className='text-royalblue font-medium'>insert portfolio link</p>
+                    <Link href='https://katepearzel.vercel.app/'>
+                      <p className='text-royalblue font-medium cursor-pointer'>https://katepearzel.vercel.app/</p>
+                    </Link>
                     <div className='flex gap-2 items-center'>
                       <img src="/assets/location.png" alt="location-icon" className="w-[20px] h-[20px] object-contain" />
                       <p className={`${styles.resumeParagraph}`}>Dagupan City, Philippines</p>
