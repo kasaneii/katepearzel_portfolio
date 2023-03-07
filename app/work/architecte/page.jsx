@@ -278,7 +278,7 @@ const page = () => {
               layout="fill"
               objectFit="cover"
               quality={100}
-              blurDataURL="/the_muse_collective/cover-2.jpg"
+              blurDataURL="/the_muse_collective/cover.jpg"
               placeholder="blur"
               className='blur-sm'
             />
