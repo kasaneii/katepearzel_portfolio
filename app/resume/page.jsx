@@ -69,7 +69,7 @@ const page = () => {
                 <div className='flex flex-col gap-10'>
                   <div className='flex flex-col gap-5'>
                     <Link href='https://katepearzel.vercel.app/'>
-                      <p className='text-royalblue font-medium cursor-pointer'>https://katepearzel.vercel.app/</p>
+                      <p className='text-royalblue font-medium cursor-pointer'>Kate Pearzel</p>
                     </Link>
                     <div className='flex gap-2 items-center'>
                       <img src="/assets/location.png" alt="location-icon" className="w-[20px] h-[20px] object-contain" />
