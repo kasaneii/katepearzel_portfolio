@@ -7,31 +7,6 @@ import { navLinks } from '../constants'
 import { gsap } from 'gsap'
 
 const Navbar = ({ textColor, logoColor }) => {
-  const [isModalOpen, setModalOpen] = useState(false)
-  const [buttonLabel, setButtonLabel] = useState('Menu')
-
-  const handleModalToggle = () => {
-    setModalOpen(!isModalOpen)
-  }
-
-  if(isModalOpen) {
-    document.body.classList.add('modal-open')
-  } else {
-    document.body.classList.remove('modal-open')
-  }
-
-  useEffect(() => {
-    if(isModalOpen) {
-      setButtonLabel('Close')
-    } else {
-      setButtonLabel('Menu')
-    }
-  }, [isModalOpen])
-
-  const handleModalClose = () => {
-    setModalOpen(false)
-  }
-
   const bounds = (el) => el.getBoundingClientRect();
   const magnetStrength = 0.3;
 
@@ -82,61 +57,6 @@ const Navbar = ({ textColor, logoColor }) => {
           ))}
         </ul>
       </div>
-
-      <button className='sm:hidden absolute right-10 cursor-pointer' onClick={handleModalToggle}>
-        <p className='text-codgray'>{buttonLabel}</p>
-      </button>
-
-      {isModalOpen && (
-        <div className='h-screen w-[35%] bg-codgray fixed z-50 top-0 right-0 py-8 px-20 flex'>
-          <div className='flex flex-col w-full'>
-            <div className='flex justify-between items-center'>
-              <p className='font-light text-ivory opacity-50'>Navigation</p>
-              <button className='cursor-pointer w-[100px] h-[100px] bg-codgray p-5 rounded-full relative' onClick={handleModalToggle}>
-                <div className='absolute top-0 left-0 bg-royalblue w-[100px] h-[100px] rounded-full flex justify-center items-center'>
-                  <p className='text-ivory'>{buttonLabel}</p>
-                </div>
-              </button>
-            </div>
-            <div className='flex flex-1 items-center pb-10'>
-              <ul className='list-none flex flex-col gap-5'>
-                <li className='font-normal text-ivory cursor-pointer'>
-                  <Link href='/' className='text-[60px]' onClick={handleModalClose}>
-                    Home
-                  </Link>
-                </li>
-                <li className='font-normal text-ivory cursor-pointer'>
-                  <Link href='/work' className='text-[60px]' onClick={handleModalClose}>
-                    Work
-                  </Link>
-                </li>
-                <li className='font-normal text-ivory cursor-pointer'>
-                  <Link href='/about' className='text-[60px]' onClick={handleModalClose}>
-                    About
-                  </Link>
-                </li>
-                <li className='font-normal text-ivory cursor-pointer'>
-                  <Link href='mailto:pearzelkate1300@gmail.com' className='text-[60px]' onClick={handleModalClose}>
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <ul className='list-none flex gap-10'>
-              <li className='font-light text-ivory cursor-pointer'>
-                <Link href='#'>LinkedIn</Link>
-              </li>
-              <li className='font-light text-ivory cursor-pointer'>
-                <Link href='#'>GitHub</Link>
-              </li>
-              <li className='font-light text-ivory cursor-pointer'>
-                <Link href='#'>Email</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      )}
     </nav>
   )
 }
