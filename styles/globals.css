@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Unbounded', cursive;
+  font-size: 16px;
+}
+
+.two-tone {
+  background: linear-gradient(180deg, rgba(225,255,117,1) 0%, rgba(188,225,55,1) 15%, rgba(160,204,0,1) 30%, rgba(41,41,41,0) 50%, rgba(32,88,220,1) 70%, rgba(66,105,226,1) 85%, rgba(90,130,234,1) 100%);
+  filter: blur(100px);
+}
+
+.lime-gradient {
+  background: #E1FF75;
+  filter: blur(50px);
+}
+
+.royal-blue-gradient {
+  background: #455CE9;
+  filter: blur(100px);
+}
+
+.box-shadow {
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.84);
+-webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.84);
+-moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.84);
+}
+
+.shadow-01 {
+  box-shadow: -1px 10px 48px -4px rgba(0,0,0,0.36);
+-webkit-box-shadow: -1px 10px 48px -4px rgba(0,0,0,0.36);
+-moz-box-shadow: -1px 10px 48px -4px rgba(0,0,0,0.36);
+}
+
+.underline-1, .underline-2, .underline-3 {
+  position: relative;
+  z-index: 0;
+}
+
+.underline-1::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #E1FF75;
+}
+
+.underline-2::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #7a88e2;
+}
+
+.underline-3::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #ababab;
+}
+
+.circle {
+  position: absolute;
+  right: 25px;
+  width: 10px;
+  height: 10px;
+  background-color: #fffff0;
+  border-radius: 50%;
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.visitWebsite:hover .circle {
+  transform: scale(4);
+}
+
+circle img {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.visitWebsite:hover .circle img {
+  opacity: 1;
+  transform: scale(0.75) rotate(-45deg);
+}
+
+#my-scrollbar {
+  height: 100vh;
+  overflow: auto;
+}
+
+.work-image {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.links {
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  scale: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #7a88e2;
+}
+
+.title {
+  will-change: transform;
+}
+
+.contact-button {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  color: #455CE9;
+}
+
+.contact-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #455CE9;
+  transition: width 0.5s ease-in-out;
+}
+
+.contact-button:hover::after {
+  width: 100%;
+}
+
+.typewriter {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+}
+
+.typewriter::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 100%;
+  border-right: .15em solid transparent;
+  animation: typing 2s steps(3) infinite;
+}
+
+@keyframes typing {
+  0% { content: ""; }
+  33.3% { content: "."; }
+  66.6% { content: ".."; }
+  100% { content: "..."; }
+}
+
+#myButton {
+  visibility: hidden;
+}
+
+#myButton.show {
+  visibility: visible;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.marquee {
+  animation: move-rtl 120s linear infinite;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rotate {
+  animation: move-rotate 6000ms linear infinite;
+}
+
+@keyframes move-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #292929;
+}
+
+.main-content {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader video {
+  max-width: 100%;
+  max-height: 100%;
+}
