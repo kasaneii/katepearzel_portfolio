@@ -196,7 +196,8 @@ const page = () => {
         <div id="my-scrollbar">
           <Navbar textColor='ivory' logoColor='ivory'/>
           <div className='w-screen h-[1900px] relative overflow-hidden'>
-            <Image ref={cover1Ref} src="/bnkly_x/cover-1.jpg" alt='bnkly x cover' layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover1Ref} src="/bnkly_x/cover-1-v2.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover1Ref} src="/bnkly_x/cover-1.jpg" alt='bnkly x cover' layout='fill' objectFit='cover' quality={100} /> */}
           </div>
 
           <div className='w-screen h-[1900px] absolute top-0 flex items-center'>
@@ -247,29 +248,32 @@ const page = () => {
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex justify-center items-center`}>
-            <Image src="/bnkly_x/mockup.png" alt='bnkly x website mockup' layout='responsive' width={1080} height={982} objectFit='contain' quality={100} />
+            <Image src="/bnkly_x/mockup.jpg" alt='bnkly x website mockup' layout='responsive' width={1920} height={1746} objectFit='contain' quality={100} />
           </div>
 
           <div className='w-screen h-screen overflow-hidden relative'>
-            <Image ref={cover2Ref} src="/bnkly_x/cover-5.jpg" alt='bnkly x cover five' layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover2Ref} src="/bnkly_x/cover-5-v2.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover2Ref} src="/bnkly_x/cover-5-v2.jpg" alt='bnkly x cover five' layout='fill' objectFit='cover' quality={100} /> */}
           </div>
 
           <div className='bg-gallery'>
             <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex flex-col gap-48`}>
               <div className='w-[1280] h-[720px] relative'>
-                <Image src="/bnkly_x/page-1.png" alt='bnkly x webpage one' layout='fill' objectFit='contain' quality={100} />
+                <Image src="/bnkly_x/page-1-v2.jpg" alt='bnkly x webpage one' layout='fill' objectFit='contain' quality={100} />
               </div>
               <div className="w-[1280] h-[720px] relative">
-                <Image src="/bnkly_x/page-3.png" alt='bnkly x webpage three ' layout='fill' objectFit='contain' quality={100} />
+                <Image src="/bnkly_x/page-3-v2.jpg" alt='bnkly x webpage three ' layout='fill' objectFit='contain' quality={100} />
               </div>
             </div>
           </div>
 
           <div className='w-screen h-[1500px] flex justify-center items-center relative overflow-hidden'>
-            <Image ref={cover3Ref} src="/bnkly_x/cover-6.jpg" alt="bnkly x cover six" layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover3Ref} src="/bnkly_x/cover-6-v2.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover3Ref} src="/bnkly_x/cover-6-v2.jpg" alt="bnkly x cover six" layout='fill' objectFit='cover' quality={100} /> */}
             <div className='w-full h-full absolute flex justify-center items-center'>
               <div className='w-[1061px] h-[691px] relative'>
-                <Image src="/bnkly_x/page-2.png" alt='bnkly x webpage two' layout='fill' objectFit='contain' quality={100} />
+                <img src="/bnkly_x/page-2-v2.jpg" className='w-full h-full object-contain' />
+                {/* <Image src="/bnkly_x/page-2.png" alt='bnkly x webpage two' layout='fill' objectFit='contain' quality={100} /> */}
               </div>
             </div>
           </div>
@@ -279,7 +283,8 @@ const page = () => {
           </div>
 
           <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-            <Image
+            <img ref={cover4Ref} src="/adam_johnson/cover-v4.jpg" className='w-full h-full object-cover blur-sm object-top' />
+            {/* <Image
               ref={cover4Ref}
               src="/adam_johnson/cover.jpg"
               alt="Adam Johnson Cover"
@@ -289,7 +294,7 @@ const page = () => {
               blurDataURL="/adam_johnson/cover.jpg"
               placeholder="blur"
               className='blur-sm'
-            />
+            /> */}
             <Link href='/work/adam-johnson'>
               <div
                 ref={cursorRef}

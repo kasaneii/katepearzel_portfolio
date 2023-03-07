@@ -184,13 +184,14 @@ const page = () => {
         <div id="my-scrollbar">
           <Navbar textColor='ivory' logoColor='ivory'/>
           <div className="relative w-screen h-[1900px] overflow-hidden">
-            <Image
+            <img ref={cover1Ref} src="/adam_johnson/cover-v5.jpg" className="w-full h-full object-cover object-top" />
+            {/* <Image
               ref={cover1Ref}
               src="/adam_johnson/cover.jpg"
               objectFit="cover"
               objectPosition="top center"
               layout="fill"
-            />
+            /> */}
             <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
           </div>
           <div className='w-screen h-[1900px] absolute top-0 flex items-center'>
@@ -243,30 +244,32 @@ const page = () => {
 
           <div className='bg-gallery'>
             <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex flex-col gap-48`}>
-              <Image src="/adam_johnson/page-1.png" alt="adam-johnson webpage one" width={1920} height={1080} quality={100} layout="responsive" />
-              <Image src="/adam_johnson/page-2.png" alt="adam-johnson webpage two" width={1920} height={1080} quality={100} layout="responsive" />
+              <Image src="/adam_johnson/page-1-v2.jpg" alt="adam-johnson webpage one" width={1920} height={985} quality={100} layout="responsive" />
+              <Image src="/adam_johnson/page-2-v2.jpg" alt="adam-johnson webpage two" width={1920} height={985} quality={100} layout="responsive" />
             </div>
           </div>
 
-
           <div className='w-screen h-screen flex justify-center items-center relative overflow-hidden'>
-            <Image
+            <img ref={cover2Ref} src="/adam_johnson/cover-2-v3.jpg" className="w-full h-full object-cover" />
+            {/* <Image
               ref={cover2Ref}
               src="/adam_johnson/cover-2.jpg"
               alt="photographer"
               layout='fill'
               objectFit="cover" 
               quality={100}
-            />
+            /> */}
             <h2 className={`${styles.heading2} absolute text-ivory drop-shadow-xl`}>Bringing the world to life, one frame at a time.</h2>
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex justify-center`}>
-            <Image src="/adam_johnson/mockup.png" alt='adam-johnson website mockup' layout="responsive" width={1920} height={1080} objectFit="contain" quality={100} />
+            <Image src="/adam_johnson/mockup.jpg" alt='adam-johnson website mockup' layout="responsive" width={1920} height={1080} objectFit="contain" quality={100} />
           </div>
 
           <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-            <Image
+            <img ref={cover3Ref} src="/metaversus/meta-1-v4.jpg" className="w-full h-full object-cover object-top blur-sm" />
+            <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
+            {/* <Image
               ref={cover3Ref}
               src="/metaversus/meta-1-v2.jpg"
               alt="Metaversus Cover"
@@ -277,7 +280,7 @@ const page = () => {
               blurDataURL="/metaversus/meta-1-v2.jpg"
               placeholder="blur"
               className='blur-sm'
-            />
+            /> */}
             <Link href='/work/metaversus'>
               <div
                 ref={cursorRef}

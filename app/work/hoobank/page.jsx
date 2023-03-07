@@ -194,7 +194,8 @@ const page = () => {
         <div id="my-scrollbar">
           <Navbar textColor='ivory' logoColor='ivory'/>
           <div className='w-screen h-[1900px] relative overflow-hidden'>
-            <Image ref={cover1Ref} src="/hoobank/cover.jpg" alt='hoobank cover' layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover1Ref} src="/hoobank/cover-v2.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover1Ref} src="/hoobank/cover.jpg" alt='hoobank cover' layout='fill' objectFit='cover' quality={100} /> */}
             <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
           </div>
 
@@ -248,11 +249,12 @@ const page = () => {
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex flex-col items-center xl:gap-20 2xl:gap-32`}>
             <Image src="/hoobank/cover-3.jpg" alt='hoobank cover three' layout='responsive' width={1920} height={1080} objectFit='contain' quality={100} />
             <h2 ref={textRef1} className={`xl:text-[40px] xl:leading-[40px] 2xl:text-[60px] 2xl:leading-[60px] font-medium text-codgray text-center`}>Effortless banking, anytime, anywhere</h2>
-            <Image src="/hoobank/page-1.png" alt='hoobank webpage one' layout='responsive' width={1920} height={1950} objectFit='contain' quality={100} />
+            <Image src="/hoobank/page-1-v2.jpg" alt='hoobank webpage one' layout='responsive' width={1920} height={1950} objectFit='contain' quality={100} />
           </div>
 
           <div className='w-screen h-screen overflow-hidden relative'>
-            <Image ref={cover2Ref} src="/hoobank/mockup.png" alt='hoobank website mockup' layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover2Ref} src="/hoobank/mockup.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover2Ref} src="/hoobank/mockup.jpg" alt='hoobank website mockup' layout='fill' objectFit='cover' quality={100} /> */}
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto`}>
@@ -260,7 +262,8 @@ const page = () => {
           </div>
 
           <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-            <Image
+            <img ref={cover3Ref} src="/bnkly_x/cover-1-v2.jpg" className='w-full h-full object-cover' />
+            {/* <Image
               ref={cover3Ref}
               src="/bnkly_x/cover-1.jpg"
               alt="Bnkly X Cover"
@@ -270,7 +273,7 @@ const page = () => {
               blurDataURL="/bnkly_x/cover-1.jpg"
               placeholder="blur"
               className='blur-sm'
-            />
+            /> */}
             <Link href='/work/bnkly-x'>
               <div
                 ref={cursorRef}

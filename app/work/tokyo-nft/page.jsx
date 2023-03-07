@@ -180,7 +180,8 @@ const page = () => {
         <div id="my-scrollbar">
           <Navbar textColor='ivory' logoColor='ivory'/>
           <div className='w-screen h-[1900px] relative overflow-hidden'>
-            <Image ref={cover1Ref} src="/tokyo_nft/cover-1.jpg" alt='tokyo nft background cover' layout='fill' objectFit='cover' objectPosition='top' quality={100} />
+            <img ref={cover1Ref} src="/tokyo_nft/cover-1-v3.jpg" className='w-full h-full object-cover object-top' />
+            {/* <Image ref={cover1Ref} src="/tokyo_nft/cover-1.jpg" alt='tokyo nft background cover' layout='fill' objectFit='cover' objectPosition='top' quality={100} /> */}
             <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
           </div>
 
@@ -234,7 +235,7 @@ const page = () => {
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex flex-col gap-48`}>
             <Image src="/tokyo_nft/cover-2.jpg" alt='tokyo nft cover two' layout='responsive' width={1901} height={1081} objectFit='contain' quality={100} />
-            <Image src="/tokyo_nft/page-2.png" alt='tokyo nft webpage two' layout='responsive' width={1920} height={2103} objectFit='contain' quality={100} />
+            <Image src="/tokyo_nft/page-2-v2.jpg" alt='tokyo nft webpage two' layout='responsive' width={1920} height={2193} objectFit='contain' quality={100} />
           </div>
 
           <div className='w-screen h-screen overflow-hidden relative'>
@@ -242,11 +243,13 @@ const page = () => {
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto`}>
-            <Image src="/tokyo_nft/mockup.png"  alt='tokyo nft website mockup' layout='responsive' width={1080} height={1182} objectFit='contain' quality={100} />
+            <Image src="/tokyo_nft/mockup.jpg"  alt='tokyo nft website mockup' layout='responsive' width={1920} height={2101} objectFit='contain' quality={100} />
           </div>
 
           <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-            <Image
+            <img ref={cover3Ref} src="/hoobank/cover-v2.jpg" className='w-full h-full object-contain blur-sm' />
+            <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
+            {/* <Image
               ref={cover3Ref}
               src="/hoobank/cover.jpg"
               alt="Hoobank Cover"
@@ -256,7 +259,7 @@ const page = () => {
               blurDataURL="/hoobank/cover.jpg"
               placeholder="blur"
               className='blur-sm'
-            />
+            /> */}
             <Link href='/work/hoobank'>
               <div
                 ref={cursorRef}

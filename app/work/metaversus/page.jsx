@@ -179,7 +179,8 @@ const page = () => {
         <div id="my-scrollbar">
           <Navbar textColor='ivory' logoColor='ivory'/>
           <div className='w-screen h-[1900px] relative overflow-hidden'>
-            <Image ref={cover1Ref} src="/metaversus/meta-1-v3.jpg" alt='virtual reality' layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover1Ref} src="/metaversus/meta-1-v3.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover1Ref} src="/metaversus/meta-1-v3.jpg" alt='virtual reality' layout='fill' objectFit='cover' quality={100} /> */}
             <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
           </div>
 
@@ -230,24 +231,28 @@ const page = () => {
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto`}>
-            <Image src="/metaversus/page-1.png" alt='metaversus webpage one' layout='responsive' width={1920} height={1400} objectFit='contain' quality={100} />
+            <Image src="/metaversus/page-1-v2.jpg" alt='metaversus webpage one' layout='responsive' width={1920} height={1400} objectFit='contain' quality={100} />
           </div>
 
           <div className='w-screen h-[2000px] overflow-hidden relative flex items-center justify-center'>
-            <Image ref={cover2Ref} src="/metaversus/meta-3.jpg" alt='metaverse background' layout='fill' objectFit='cover' />
+            <img ref={cover2Ref} src="/metaversus/meta-3-v2.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover2Ref} src="/metaversus/meta-3.jpg" alt='metaverse background' layout='fill' objectFit='cover' /> */}
             <div className='w-full h-full absolute flex justify-center items-center'>
               <div className='w-[861px] h-[1391px] relative'>
-                <Image src="/metaversus/page-2.png" alt='metaversus webpage two' layout='fill' objectFit='contain' quality={100} />
-            </div>
+                <img src="/metaversus/page-2-v2.jpg" className='w-full h-full object-contain' />
+                {/* <Image src="/metaversus/page-2.png" alt='metaversus webpage two' layout='fill' objectFit='contain' quality={100} /> */}
+              </div>
             </div>
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto`}>
-            <Image src="/metaversus/mockup.png" alt='metaversus website mockup' layout='responsive' width={1920} height={1080} objectFit='contain' quality={100} />
+            <Image src="/metaversus/mockup.jpg" alt='metaversus website mockup' layout='responsive' width={1920} height={1080} objectFit='contain' quality={100} />
           </div>
 
           <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-            <Image
+            <img ref={cover3Ref} src="/architecte/cover-v3.jpg" className='w-full h-full object-cover blur-sm' />
+            <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
+            {/* <Image
               ref={cover3Ref}
               src="/architecte/cover.jpg"
               alt="Architecte Cover"
@@ -257,7 +262,7 @@ const page = () => {
               blurDataURL="/architecte/cover.jpg"
               placeholder="blur"
               className='blur-sm'
-            />
+            /> */}
             <Link href='/work/architecte'>
               <div
                 ref={cursorRef}

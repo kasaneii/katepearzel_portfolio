@@ -195,7 +195,8 @@ const page = () => {
         <div id="my-scrollbar">
           <Navbar textColor='ivory' logoColor='ivory'/>
           <div className='w-screen h-[1900px] relative overflow-hidden'>
-            <Image ref={cover1Ref} src="/architecte/cover.jpg" alt='architecture background' layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover1Ref} src="/architecte/cover.jpg" className='w-full h-full object-cover object-top' />
+            {/* <Image ref={cover1Ref} src="/architecte/cover.jpg" alt='architecture background' layout='fill' objectFit='cover' quality={100} /> */}
             <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
           </div>
 
@@ -248,18 +249,21 @@ const page = () => {
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto`}>
-            <Image src="/architecte/mockup.png" alt='architecte website mockup' layout='responsive' width={1920} height={1080} objectFit='contain' quality={100} />
+            <Image src="/architecte/mockup.jpg" alt='architecte website mockup' layout='responsive' width={1920} height={1080} objectFit='contain' quality={100} />
           </div>
 
           <div className='w-screen h-[2000px] overflow-hidden relative'>
-            <Image ref={cover2Ref} src="/architecte/cover-2.jpg" layout='fill' objectFit='cover' quality={100} />
+            <img ref={cover2Ref} src="/architecte/cover-2.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover2Ref} src="/architecte/cover-2.jpg" layout='fill' objectFit='cover' quality={100} /> */}
             <div className='w-full h-full absolute top-0 flex justify-center items-center'>
               <div className={`${styles.innerWidth} mx-auto flex flex-col justify-center items-center gap-48`}>
                 <div className='w-[1081px] h-[547px] relative'>
-                  <Image src="/architecte/page-1.png" alt='architecte webpage one' layout='fill' objectFit='contain' quality={100} />
+                  <img src="/architecte/page-1-v2.jpg" className='w-full h-full object-contain' />
+                  {/* <Image src="/architecte/page-1.png" alt='architecte webpage one' layout='fill' objectFit='contain' quality={100} /> */}
                 </div>
                 <div className="w-[1081px] h-[547px] relative">
-                  <Image src="/architecte/page-2.png" alt='architecte webpage two' layout='fill' objectFit='contain' quality={100} />
+                <img src="/architecte/page-2-v2.jpg" className='w-full h-full object-contain' />
+                  {/* <Image src="/architecte/page-2.png" alt='architecte webpage two' layout='fill' objectFit='contain' quality={100} /> */}
                 </div>
               </div>
             </div>
@@ -271,17 +275,19 @@ const page = () => {
           </div>
 
           <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-            <Image
+            <img ref={cover3Ref} src="/the_muse_collective/cover-v2.jpg" className='w-full h-full object-cover blur-sm' />
+            <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
+            {/* <Image
               ref={cover3Ref}
               src="/the_muse_collective/cover-2.jpg"
               alt="The Muse Collective Cover"
               layout="fill"
               objectFit="cover"
               quality={100}
-              blurDataURL="/the_muse_collective/cover.jpg"
+              blurDataURL="/the_muse_collective/cover-2.jpg"
               placeholder="blur"
               className='blur-sm'
-            />
+            /> */}
             <Link href='/work/the-muse-collective'>
               <div
                 ref={cursorRef}

@@ -194,7 +194,8 @@ const page = () => {
         <div id="my-scrollbar">
           <Navbar textColor='ivory' logoColor='ivory'/>
           <div className='w-screen h-[1900px] relative overflow-hidden'>
-            <Image ref={cover1Ref} src="/the_muse_collective/cover.jpg" alt="the muse collective cover" layout="fill" objectPosition='left' objectFit='cover' quality={100} />
+            <img ref={cover1Ref} src="/the_muse_collective/cover-v2.jpg" className='w-full h-full object-cover object-left' />
+            {/* <Image ref={cover1Ref} src="/the_muse_collective/cover.jpg" alt="the muse collective cover" layout="fill" objectPosition='left' objectFit='cover' quality={100} /> */}
             <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
           </div>
 
@@ -249,22 +250,24 @@ const page = () => {
           <div className='bg-silver'>
             <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex justify-center`}>
               <div className='w-[1061px] h-[1185px] relative'>
-                <Image src="/the_muse_collective/page-1.png" alt='the muse collective webpage one' layout='fill' objectFit='contain' />
+                <Image src="/the_muse_collective/page-1-v2.jpg" alt='the muse collective webpage one' layout='fill' objectFit='contain' />
               </div>
             </div>
           </div>
 
           <div className='w-screen h-screen overflow-hidden relative'>
-            <Image ref={cover2Ref} src="/the_muse_collective/mockup.png" alt='the muse collective website mockup' layout='fill' objectFit='cover' objectPosition='top' quality={100} />
+            <img ref={cover2Ref} src="/the_muse_collective/mockup.jpg" className='w-full h-full object-cover' />
+            {/* <Image ref={cover2Ref} src="/the_muse_collective/mockup.jpg" alt='the muse collective website mockup' layout='fill' objectFit='cover' objectPosition='top' quality={100} /> */}
           </div>
 
           <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex flex-col items-center gap-20`}>
-            <Image src="/the_muse_collective/page-2.png" alt="the muse collective webpage two" layout='responsive' width={1920} height={1080} objectFit='contain' />
+            <Image src="/the_muse_collective/page-2-v2.jpg" alt="the muse collective webpage two" layout='responsive' width={1920} height={1080} objectFit='contain' />
             <h2 ref={textRef} className={`xl:text-[48px] 2xl:text-[60px] text-codgray`}>Unleashing the Power of Creativity.</h2>
           </div>
 
           <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-            <Image
+            <img ref={cover3Ref} src="/tokyo_nft/cover-1-v4.jpg" className='w-full h-full object-cover blur-sm' />
+            {/* <Image
               ref={cover3Ref}
               src="/tokyo_nft/cover-1.jpg"
               alt="Tokyo NFT Cover"
@@ -274,7 +277,7 @@ const page = () => {
               blurDataURL="/tokyo_nft/cover-1.jpg"
               placeholder="blur"
               className='blur-sm'
-            />
+            /> */}
             <Link href='/work/tokyo-nft'>
               <div
                 ref={cursorRef}
