@@ -5,36 +5,13 @@ import { Navbar } from '@/components'
 import Link from 'next/link'
 import styles from '@/styles'
 import Scrollbar from 'smooth-scrollbar'
-import { gsap, Power3 } from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const page = () => {
-  const contentRef = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      contentRef.current,
-      {
-        y: '200%',
-        skewY: 15,
-        opacity: 0,
-      },
-      {
-        duration: 1,
-        y: 0,
-        skewY: 0,
-        ease: Power3.easeOut,
-        opacity: 1,
-        onComplete: () => {
-          contentRef.current.style.opacity = 1;
-        },
-      },
-    );
-  }, []);
-
   const imageRef = useRef(null);
   const cursorRef = useRef(null);
   const nextRef = useRef(null);
@@ -204,126 +181,122 @@ const page = () => {
         <p className="text-ivory text-center">Please visit on a desktop device <br/> for a better experience.</p>
       </div>
       <div className="xl:block hidden">
-        <div className="main-container">
-          <div className="main-content" ref={contentRef} style={{ opacity: 0 }}>
-            <div id="my-scrollbar">
-              <Navbar textColor='ivory' logoColor='ivory'/>
-              <div className="relative w-screen h-[1900px] overflow-hidden">
-                <img ref={cover1Ref} src="/adam_johnson/cover-v5.jpg" className="w-full h-full object-cover object-top" />
-                {/* <Image
-                  ref={cover1Ref}
-                  src="/adam_johnson/cover.jpg"
-                  objectFit="cover"
-                  objectPosition="top center"
-                  layout="fill"
-                /> */}
-                <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
-              </div>
-              <div className='w-screen h-[1900px] absolute top-0 flex items-center'>
-                <div className={`${styles.innerWidth} mx-auto text-ivory`}>
-                  <h2 className={`${styles.heroHeading2}`}>Adam Johnson</h2>
-                  <div className='pt-5 flex justify-between items-center'>
-                    <div className='flex flex-1 justify-start'>
-                      <p className='font-light'>Creative photography portfolio</p>
-                    </div>
-                    <div className='flex flex-1 justify-end'>
-                      <Link href='https://adamjohnson.vercel.app/' target='_blank' rel='noopener noreferrer'>
-                        <button className='visitWebsite bg-mineshaft px-6 py-4 rounded-full flex items-center gap-10 relative'>
-                          <p className='pr-10'>Visit Website</p>
-                          <div className='circle flex justify-center items-center'>
-                            <img src="/right-arrow.png" alt="arrow" className='opacity-0 transform-opacity object-contain' />
-                          </div>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className='pt-32 w-[700px]'>
-                    <p className={`${styles.heroParagraph}`}>
-                      Adam Johnson is a master storyteller and visual artist, using his photography skills to capture the beauty and complexities of the world. As a creative director, he infuses his projects with imagination and a touch of magic.
-                    </p>
-                  </div>
-                  <div className='pt-32 flex gap-20 '>
-                    <div className='flex flex-col gap-5'>
-                      <p className='font-medium uppercase'>role/services</p>
-                      <div className='flex flex-col gap-2'>
-                        <p className='text-[14px] font-light'>UI & UX Design</p>
-                        <p className='text-[14px] font-light'>Web Development</p>
-                      </div>
-                    </div>
-                    <div className='flex flex-col gap-5'>
-                      <p className='font-medium uppercase'>Industry</p>
-                      <div className='flex flex-col gap-2'>
-                        <p className='text-[14px] font-light'>Photography</p>
-                        <p className='text-[14px] font-light'>Film making</p>
-                      </div>
-                    </div>
-                    <div className='flex flex-col gap-5'>
-                      <p className='font-medium uppercase'>Year</p>
-                      <div className='flex flex-col gap-2'>
-                        <p className='text-[14px] font-light'>'2023</p>
-                      </div>
-                    </div>
-                  </div>
+        <div id="my-scrollbar">
+          <Navbar textColor='ivory' logoColor='ivory'/>
+          <div className="relative w-screen h-[1900px] overflow-hidden">
+            <img ref={cover1Ref} src="/adam_johnson/cover-v5.jpg" className="w-full h-full object-cover object-top" />
+            {/* <Image
+              ref={cover1Ref}
+              src="/adam_johnson/cover.jpg"
+              objectFit="cover"
+              objectPosition="top center"
+              layout="fill"
+            /> */}
+            <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
+          </div>
+          <div className='w-screen h-[1900px] absolute top-0 flex items-center'>
+            <div className={`${styles.innerWidth} mx-auto text-ivory`}>
+              <h2 className={`${styles.heroHeading2}`}>Adam Johnson</h2>
+              <div className='pt-5 flex justify-between items-center'>
+                <div className='flex flex-1 justify-start'>
+                  <p className='font-light'>Creative photography portfolio</p>
                 </div>
-              </div>
-
-              <div className='bg-gallery'>
-                <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex flex-col gap-48`}>
-                  <Image src="/adam_johnson/page-1-v2.jpg" alt="adam-johnson webpage one" width={1920} height={985} quality={100} layout="responsive" />
-                  <Image src="/adam_johnson/page-2-v2.jpg" alt="adam-johnson webpage two" width={1920} height={985} quality={100} layout="responsive" />
-                </div>
-              </div>
-
-              <div className='w-screen h-screen flex justify-center items-center relative overflow-hidden'>
-                <img ref={cover2Ref} src="/adam_johnson/cover-2-v3.jpg" className="w-full h-full object-cover" />
-                {/* <Image
-                  ref={cover2Ref}
-                  src="/adam_johnson/cover-2.jpg"
-                  alt="photographer"
-                  layout='fill'
-                  objectFit="cover" 
-                  quality={100}
-                /> */}
-                <h2 className={`${styles.heading2} absolute text-ivory drop-shadow-xl`}>Bringing the world to life, one frame at a time.</h2>
-              </div>
-
-              <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex justify-center`}>
-                <Image src="/adam_johnson/mockup.jpg" alt='adam-johnson website mockup' layout="responsive" width={1920} height={1080} objectFit="contain" quality={100} />
-              </div>
-
-              <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
-                <img ref={cover3Ref} src="/metaversus/meta-1-v4.jpg" className="w-full h-full object-cover object-top blur-sm" />
-                <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
-                {/* <Image
-                  ref={cover3Ref}
-                  src="/metaversus/meta-1-v2.jpg"
-                  alt="Metaversus Cover"
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="top center"
-                  quality={100}
-                  blurDataURL="/metaversus/meta-1-v2.jpg"
-                  placeholder="blur"
-                  className='blur-sm'
-                /> */}
-                <Link href='/work/metaversus'>
-                  <div
-                    ref={cursorRef}
-                    className={`${styles.flexCenter} w-[150px] h-[150px] rounded-full bg-royalblue absolute top-0 left-0 opacity-0 z-10`}
-                  >
-                    <p ref={nextRef} className='text-ivory text-center font-light'>Next</p>
-                  </div>
-                </Link>
-                <div className={`${styles.innerWidth} mx-auto flex justify-center items-center absolute`}>
-                  <Link href='/work/metaversus' className="absolute w-full h-full flex justify-center items-center">
-                    <div ref={textRef} className="absolute left-20">
-                      <h3 className='text-ivory font-normal text-[40px] leading-[40px]'>Metaversus</h3>
-                      <p className='pt-5 text-ivory'>Metaverse landing page</p>
-                    </div>
-                    <img src="/metaversus/meta-1.jpg" className="w-[300px] h-[400px] object-cover" />
+                <div className='flex flex-1 justify-end'>
+                  <Link href='https://adamjohnson.vercel.app/' target='_blank' rel='noopener noreferrer'>
+                    <button className='visitWebsite bg-mineshaft px-6 py-4 rounded-full flex items-center gap-10 relative'>
+                      <p className='pr-10'>Visit Website</p>
+                      <div className='circle flex justify-center items-center'>
+                        <img src="/right-arrow.png" alt="arrow" className='opacity-0 transform-opacity object-contain' />
+                      </div>
+                    </button>
                   </Link>
                 </div>
               </div>
+              <div className='pt-32 w-[700px]'>
+                <p className={`${styles.heroParagraph}`}>
+                  Adam Johnson is a master storyteller and visual artist, using his photography skills to capture the beauty and complexities of the world. As a creative director, he infuses his projects with imagination and a touch of magic.
+                </p>
+              </div>
+              <div className='pt-32 flex gap-20 '>
+                <div className='flex flex-col gap-5'>
+                  <p className='font-medium uppercase'>role/services</p>
+                  <div className='flex flex-col gap-2'>
+                    <p className='text-[14px] font-light'>UI & UX Design</p>
+                    <p className='text-[14px] font-light'>Web Development</p>
+                  </div>
+                </div>
+                <div className='flex flex-col gap-5'>
+                  <p className='font-medium uppercase'>Industry</p>
+                  <div className='flex flex-col gap-2'>
+                    <p className='text-[14px] font-light'>Photography</p>
+                    <p className='text-[14px] font-light'>Film making</p>
+                  </div>
+                </div>
+                <div className='flex flex-col gap-5'>
+                  <p className='font-medium uppercase'>Year</p>
+                  <div className='flex flex-col gap-2'>
+                    <p className='text-[14px] font-light'>'2023</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='bg-gallery'>
+            <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex flex-col gap-48`}>
+              <Image src="/adam_johnson/page-1-v2.jpg" alt="adam-johnson webpage one" width={1920} height={985} quality={100} layout="responsive" />
+              <Image src="/adam_johnson/page-2-v2.jpg" alt="adam-johnson webpage two" width={1920} height={985} quality={100} layout="responsive" />
+            </div>
+          </div>
+
+          <div className='w-screen h-screen flex justify-center items-center relative overflow-hidden'>
+            <img ref={cover2Ref} src="/adam_johnson/cover-2-v3.jpg" className="w-full h-full object-cover" />
+            {/* <Image
+              ref={cover2Ref}
+              src="/adam_johnson/cover-2.jpg"
+              alt="photographer"
+              layout='fill'
+              objectFit="cover" 
+              quality={100}
+            /> */}
+            <h2 className={`${styles.heading2} absolute text-ivory drop-shadow-xl`}>Bringing the world to life, one frame at a time.</h2>
+          </div>
+
+          <div className={`${styles.paddingY} ${styles.innerWidth} mx-auto flex justify-center`}>
+            <Image src="/adam_johnson/mockup.jpg" alt='adam-johnson website mockup' layout="responsive" width={1920} height={1080} objectFit="contain" quality={100} />
+          </div>
+
+          <div ref={imageRef} className='w-screen h-screen flex items-center justify-center relative overflow-hidden'>
+            <img ref={cover3Ref} src="/metaversus/meta-1-v4.jpg" className="w-full h-full object-cover object-top blur-sm" />
+            <div className='w-full h-full absolute top-0 bg-black opacity-25'></div>
+            {/* <Image
+              ref={cover3Ref}
+              src="/metaversus/meta-1-v2.jpg"
+              alt="Metaversus Cover"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top center"
+              quality={100}
+              blurDataURL="/metaversus/meta-1-v2.jpg"
+              placeholder="blur"
+              className='blur-sm'
+            /> */}
+            <Link href='/work/metaversus'>
+              <div
+                ref={cursorRef}
+                className={`${styles.flexCenter} w-[150px] h-[150px] rounded-full bg-royalblue absolute top-0 left-0 opacity-0 z-10`}
+              >
+                <p ref={nextRef} className='text-ivory text-center font-light'>Next</p>
+              </div>
+            </Link>
+            <div className={`${styles.innerWidth} mx-auto flex justify-center items-center absolute`}>
+              <Link href='/work/metaversus' className="absolute w-full h-full flex justify-center items-center">
+                <div ref={textRef} className="absolute left-20">
+                  <h3 className='text-ivory font-normal text-[40px] leading-[40px]'>Metaversus</h3>
+                  <p className='pt-5 text-ivory'>Metaverse landing page</p>
+                </div>
+                <img src="/metaversus/meta-1.jpg" className="w-[300px] h-[400px] object-cover" />
+              </Link>
             </div>
           </div>
         </div>
