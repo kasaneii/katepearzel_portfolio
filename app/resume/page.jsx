@@ -69,20 +69,27 @@ const page = () => {
                 <div className='flex flex-col gap-10'>
                   <div className='flex flex-col gap-5'>
                     <Link href='https://katepearzel.vercel.app/'>
-                      <p className='text-royalblue font-medium cursor-pointer'>Kate Pearzel</p>
+                      <div className="flex items-center gap-2 cursor-pointer">
+                        <p className='text-royalblue font-medium'>Kate Pearzel</p>
+                        <img src="/smile-royalblue.png" className="w-[15px] h-[15px] object-contain" />
+                      </div>
                     </Link>
                     <div className='flex gap-2 items-center'>
                       <img src="/assets/location.png" alt="location-icon" className="w-[20px] h-[20px] object-contain" />
                       <p className={`${styles.resumeParagraph}`}>Dagupan City, Philippines</p>
                     </div>
-                    <div className='flex gap-2 items-center'>
-                      <img src="/assets/email.png" alt="email-icon" className="w-[20px] h-[20px] object-contain" />
-                      <p className={`${styles.resumeParagraph}`}>pearzelkate1300@gmail.com</p>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                      <img src="/assets/phone.png" alt="phone-icon" className="w-[20px] h-[20px] object-contain" />
-                      <p className={`${styles.resumeParagraph}`}>+63 950 505 1127</p>
-                    </div>
+                    <Link href='mailto:pearzelkate1300@gmail.com'>
+                      <div className='flex gap-2 items-center'>
+                        <img src="/assets/email.png" alt="email-icon" className="w-[20px] h-[20px] object-contain" />
+                        <p className={`${styles.resumeParagraph}`}>pearzelkate1300@gmail.com</p>
+                      </div>
+                    </Link>
+                    <Link href='tel:+639505051127'>
+                      <div className='flex gap-2 items-center'>
+                        <img src="/assets/phone.png" alt="phone-icon" className="w-[20px] h-[20px] object-contain" />
+                        <p className={`${styles.resumeParagraph}`}>+63 950 505 1127</p>
+                      </div>
+                    </Link>
                   </div>
 
                   <div className='flex flex-col gap-2'>

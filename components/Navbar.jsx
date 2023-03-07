@@ -39,10 +39,12 @@ const Navbar = ({ textColor, logoColor }) => {
     <nav className={`${styles.xPaddings} py-8 bg-transparent absolute top-0 z-20 w-screen`}>
       <div className='hidden sm:flex items-center justify-between'>
         <Link href='/'>
-          <div className="flex gap-2 items-center">
-            <p className={`text-${textColor} font-normal cursor-pointer`}>Kate Pearzel</p>
-            <img src={`/smile-${logoColor}.png`} className="w-[15px] h-[15px] object-contain" />
-          </div>
+          <button className="contact-button">
+            <div className="flex gap-2 items-center cursor-pointer">
+              <p className={`text-${textColor} font-normal`}>Kate Pearzel</p>
+              <img src={`/smile-${logoColor}.png`} className="w-[15px] h-[15px] object-contain" />
+            </div>
+          </button>
         </Link>
         <ul className='list-none flex justify-end items-center gap-12 flex-1'>
           {navLinks.map((nav) => (
