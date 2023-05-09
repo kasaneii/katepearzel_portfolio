@@ -56,7 +56,7 @@ const page = () => {
                     <Link href='https://www.linkedin.com/in/kate-pearzel-cayabyab-aa7609177/' target='_blank'>
                       <img src="/assets/linkedin.png" alt="linkedin-logo" className='w-[20px] h-[20px] object-contain' />
                     </Link>
-                    <Link href='/KatePearzel-Resume.pdf' target='_blank'>
+                    <Link href='/KatePearzel-Resume-updated.pdf' target='_blank'>
                       <div className='flex gap-2 items-center cursor-pointer'>
                         <img src="/assets/download.png" alt="download-icon" className='w-[20px] h-[20px] object-contain' />
                         <p className={`${styles.resumeParagraph}`}>Download</p>
