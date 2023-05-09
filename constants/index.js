@@ -116,6 +116,21 @@ export const devTools = [
     imgUrl: '/tools/tailwind-css.png',
   },
   {
+    id: 'wordpress',
+    title: 'WordPress',
+    imgUrl: '/tools/wordpress.png',
+  },
+  {
+    id: 'webflow',
+    title: 'Webflow',
+    imgUrl: '/tools/webflow.png',
+  },
+  {
+    id: 'shopify',
+    title: 'Shopify',
+    imgUrl: '/tools/shopify.png',
+  },
+  {
     id: 'reactJs',
     title: 'React JS',
     imgUrl: '/tools/reactjs.png',
@@ -180,6 +195,32 @@ export const skills = [
 ]
 
 export const experiences = [
+  {
+    company: 'RealtyView, Inc',
+    position: 'Front End Developer',
+    date: 'March 23 2023 - May 05 2023',
+    description: "As a Front End Developer at RealtyView, Inc., I was responsible for converting Figma designs into a fully-functional real estate landing page. I also developed the UI/UX of the CMS dashboard for the company's web application.",
+    tasks: [
+      {
+        task: 'Collaborating with the design team to ensure that all Figma designs were accurately and efficiently converted into a fully-functional landing page.',
+      },
+      {
+        task: 'Creating and implementing responsive design features to ensure that the landing page was optimized for use on all devices and platforms.',
+      },
+      {
+        task: 'Conducting usability testing and incorporating feedback from stakeholders to ensure that the landing page met the needs and expectations of both clients and customers.',
+      },
+      {
+        task: "Developed the front end of the CMS dashboard of the company's web application.",
+      },
+      {
+        task: "Throughout my work, I maintained a strong focus on responsive design principles, ensuring that both the landing page and CMS dashboard were optimized for use on a variety of devices and screen sizes.",
+      },
+      {
+        task: "I also utilized version control tools such as Git to collaborate with other developers and manage code changes throughout the development process.",
+      },
+    ],
+  },
   {
     id: 'experience-1',
     company: 'Freelancing',

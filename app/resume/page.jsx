@@ -129,8 +129,8 @@ const page = () => {
 
                     <div className='flex flex-col gap-5'>
                       <p className='text-[28px] font-medium text-royalblue'>Work Experience</p>
-                      {experiences.map((experience) => (
-                        <div key={experience.id} className='flex flex-col gap-5'>
+                      {experiences.map((experience, index) => (
+                        <div key={index} className='flex flex-col gap-5'>
                           <div className='flex justify-between items-center'>
                             <div className='flex flex-col gap-2'>
                               <p className='text-[20px] text-royalblue font-medium'>{experience.company}</p>
@@ -141,8 +141,8 @@ const page = () => {
                           <div className='flex flex-col gap-2'>
                             <p className={`${styles.resumeParagraph} font-light`}>{experience.description}</p>
                             <ul className='list-none'>
-                              {experience.tasks.map((task) => (
-                                <div key={task.id} className='flex gap-2 items-center'>
+                              {experience.tasks.map((task, index) => (
+                                <div key={index} className='flex gap-2 items-center'>
                                   <div className='w-[7px] h-[7px] bg-mineshaft'/>
                                   <li className={`${styles.resumeParagraph} font-light`}>
                                     {task.task}
