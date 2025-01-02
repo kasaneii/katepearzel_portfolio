@@ -98,7 +98,7 @@ const ImageContainer = ({ imageUrl, bgColor }) => {
         ref={cursorRef}
         className={`${styles.flexCenter} w-[150px] h-[150px] rounded-full bg-royalblue absolute top-0 left-0 opacity-0`}
       >
-        <p ref={textRef} className='text-ivory text-center font-light'>View <br/> Project</p>
+        <p ref={textRef} className='text-ivory text-center font-light'>Visit <br/> Website</p>
       </div>
     </div>
   )
@@ -112,6 +112,66 @@ const Project = () => {
           <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
               <div>
+                <h2 className='xl:text-[40px] 2xl:text-[56px]'>Pink Parlour</h2>
+                <h3 className='2xl:text-[20px]'>Beauty Service Marketing Website</h3>
+                <h3 className='2xl:text-[20px]'>2024</h3>
+              </div>
+              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                <img src="/pinkparlour.png" alt="" className='w-full h-full object-cover' />
+              </div>
+            </div>
+            <Link href='https://pinkparlour.asia/'>
+              <ImageContainer imageUrl='/projects/pinkparlour-pages.png' bgColor='bg-[#D8AD8B]' />
+            </Link>
+          </div>
+          <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
+            <div className='flex flex-col justify-center gap-10 text-codgray'>
+              <div>
+                <h2 className='xl:text-[40px] 2xl:text-[56px]'>Oh!Jobs.ph</h2>
+                <h3 className='2xl:text-[20px]'>Job Listing Website</h3>
+                <h3 className='2xl:text-[20px]'>2024</h3>
+              </div>
+              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                <img src="/ohjobsph.png" alt="" className='w-full h-full object-cover' />
+              </div>
+            </div>
+            <Link href='https://ohjobs.ph/'>
+              <ImageContainer imageUrl='/projects/ohjobsph-pages.png' bgColor='bg-[#24C583]' />
+            </Link>
+          </div>
+          <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
+            <div className='flex flex-col justify-center gap-10 text-codgray'>
+              <div>
+                <h2 className='xl:text-[40px] 2xl:text-[56px]'>IEMOP</h2>
+                <h3 className='2xl:text-[20px]'>Corporate and Marketing Website</h3>
+                <h3 className='2xl:text-[20px]'>2024</h3>
+              </div>
+              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                <img src="/iemop.png" alt="" className='w-full h-full object-cover' />
+              </div>
+            </div>
+            <Link href='https://www.iemop.ph/'>
+              <ImageContainer imageUrl='/projects/iemop-pages.png' bgColor='bg-[#2C6294]' />
+            </Link>
+          </div>
+          <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
+            <div className='flex flex-col justify-center gap-10 text-codgray'>
+              <div>
+                <h2 className='xl:text-[40px] 2xl:text-[56px]'>Maxsupport</h2>
+                <h3 className='2xl:text-[20px]'>Agency and Marketing Landing Page</h3>
+                <h3 className='2xl:text-[20px]'>2023</h3>
+              </div>
+              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                <img src="/maxsupport.png" alt="" className='w-full h-full object-cover' />
+              </div>
+            </div>
+            <Link href='https://maxsupport.com.ph/'>
+              <ImageContainer imageUrl='/projects/maxsupport-pages.png' bgColor='bg-[#C0051C]' />
+            </Link>
+          </div>
+          <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
+            <div className='flex flex-col justify-center gap-10 text-codgray'>
+              <div>
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Adam Johnson</h2>
                 <h3 className='2xl:text-[20px]'>Creative Photography Portfolio</h3>
                 <h3 className='2xl:text-[20px]'>2023</h3>
@@ -120,12 +180,12 @@ const Project = () => {
                 <img src="/adam-johnson.png" alt="" className='w-full h-full object-cover' />
               </div>
             </div>
-            <Link href='/work/adam-johnson'>
+            <Link href='https://adamjohnson.vercel.app/'>
               <ImageContainer imageUrl='/projects/adam-johnson-pages.png' bgColor='bg-[#5E7787]' />
             </Link>
           </div>
           <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
-            <Link href='/work/metaversus'>
+            <Link href='https://metaversus-olive.vercel.app/'>
               <ImageContainer imageUrl='/projects/metaversus-pages.png' bgColor='bg-[#D4ABF2]' />
             </Link>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
@@ -150,12 +210,12 @@ const Project = () => {
                 <img src="/architecte.png" alt="" className='w-full h-full object-cover' />
               </div>
             </div>
-            <Link href='/work/architecte'>
+            <Link href='https://architecte-liard.vercel.app/'>
               <ImageContainer imageUrl='/projects/architecte-pages.png' bgColor='bg-[#f5f5dc]' />
             </Link>
           </div>
           <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
-            <Link href='/work/the-muse-collective'>
+            <Link href='https://musecollective.vercel.app/'>
               <ImageContainer imageUrl='/projects/the-muse-collective-pages.png' bgColor='bg-[#e97451]' />
             </Link>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
@@ -169,7 +229,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
+          {/* <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
               <div>
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Tokyo NFT</h2>
@@ -183,9 +243,9 @@ const Project = () => {
             <Link href='/work/tokyo-nft'>
               <ImageContainer imageUrl='/projects/tokyo-nft-pages.png' bgColor='bg-[#EEBFC8]' />
             </Link>
-          </div>
+          </div> */}
           <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
-            <Link href='/work/hoobank'>
+            <Link href='https://hoobank-tau-puce.vercel.app/'>
               <ImageContainer imageUrl='/projects/hoobank-pages.png' bgColor='bg-[#C3E6F4]' />
             </Link>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
@@ -210,7 +270,7 @@ const Project = () => {
                 <img src="/bnkly-x.png" alt="" className='w-full h-full object-cover' />
               </div>
             </div>
-            <Link href='/work/bnkly-x'>
+            <Link href='https://bnkly-x.vercel.app/'>
               <ImageContainer imageUrl='/projects/bnkly-x-pages.png' bgColor='bg-[#f5deb3]' />
             </Link>
           </div>

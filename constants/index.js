@@ -36,32 +36,32 @@ export const footerLinks = [
 
 export const recentWorks = [
   {
-    id: 'photography',
-    title: 'Adam Johnson',
-    category: 'Photography Portfolio',
-    imgUrl: '/projects/adam-johnson.png',
-    url: '/work/adam-johnson'
+    id: 'beauty',
+    title: 'Pink Parlour',
+    category: 'Beauty Services Website',
+    imgUrl: '/pinkparlour.png',
+    url: 'https://pinkparlour.asia/'
   },
   {
-    id: 'metaverse',
-    title: 'Metaversus',
-    category: 'Metaverse Website',
-    imgUrl: '/projects/metaversus.png',
-    url: '/work/metaversus'
+    id: 'joblisting',
+    title: 'Oh!Jobs.ph',
+    category: 'Job Listing Website',
+    imgUrl: '/ohjobsph.png',
+    url: 'https://ohjobs.ph/'
   },
   {
-    id: 'architecture',
-    title: 'Architecte',
-    category: 'Architecture Website',
-    imgUrl: '/projects/architecte.png',
-    url: '/work/architecte'
+    id: 'corporation',
+    title: 'IEMOP',
+    category: 'Corporation Website',
+    imgUrl: '/iemop.png',
+    url: 'https://www.iemop.ph/'
   },
   {
     id: 'agency',
-    title: 'The Muse Collective',
-    category: 'Creative Agency Website',
-    imgUrl: '/projects/the-muse-collective.png',
-    url: '/work/the-muse-collective'
+    title: 'Maxsupport',
+    category: 'Agency Website',
+    imgUrl: '/maxsupport.png',
+    url: 'https://maxsupport.com.ph/'
   },
 ]
 
@@ -196,9 +196,29 @@ export const skills = [
 
 export const experiences = [
   {
+    company: 'Web Outsourcing Gateway',
+    position: 'UI/UX Designer and Developer',
+    date: 'Present',
+    description: "At Web Outsourcing Gateway, I collaborated with cross-functional teams to design and develop user-centric web solutions, blending UI/UX design and front-end development expertise to enhance client satisfaction.",
+    tasks: [
+      {
+        task: 'Designed intuitive and visually compelling user interfaces for web and mobile applications.',
+      },
+      {
+        task: 'Conducted user research and usability testing to inform design decisions.',
+      },
+      {
+        task: 'Translated design concepts into responsive, accessible, and high-performance code.',
+      },
+      {
+        task: "Worked closely with clients and stakeholders to align solutions with business goals.",
+      },
+    ],
+  },
+  {
     company: 'RealtyView, Inc',
     position: 'Front End Developer',
-    date: 'March 23 2023 - May 05 2023',
+    date: '2023',
     description: "As a Front End Developer at RealtyView, Inc., I was responsible for converting Figma designs into a fully-functional real estate landing page. I also developed the UI/UX of the CMS dashboard for the company's web application.",
     tasks: [
       {
@@ -225,7 +245,7 @@ export const experiences = [
     id: 'experience-1',
     company: 'Freelancing',
     position: 'Video Editor and Graphic Designer',
-    date: 'May 2020 - Present',
+    date: '2020',
     description: 'As a freelance video editor and graphic designer, I have a diverse range of experience in editing videos for various platforms, as well as creating custom posters and thumbnails using design software. I specialize in using software such as Adobe Premiere Pro, After Effects, Photoshop, and Canva to create visually appealing and effective content. My expertise in design principles, including color, typography, and layout, allows me to create content that resonates with viewers and helps brands convey their message.',
     tasks: [
       {
@@ -262,7 +282,7 @@ export const experiences = [
     id: 'experience-2',
     company: 'Baguio LGU (City Government)',
     position: 'Back-end Developer',
-    date: 'June 2021 - August 2021',
+    date: '2021',
     description: 'As a backend developer, I was responsible for managing the database and developing new features for an application. I developed a QR scanner feature for registration using Flutter for both mobile and web platforms, as well as a geo map location feature that utilized the Google Maps API to display business locations. I also utilized Laravel API to ensure the smooth flow of data between the front-end and back-end, and focused on optimizing performance and enhancing security.',
     tasks: [
       {
@@ -291,7 +311,7 @@ export const experiences = [
     id: 'experience-3',
     company: 'DWCM Aksyon Radyo Pangasinan',
     position: 'IT Assistant',
-    date: 'March 2018 - April 2018',
+    date: '2018',
     description: 'In my role as an IT assistant, I played a critical role in ensuring the smooth operation of broadcasting programs. I provided valuable support to producers and on-air talent, controlled the broadcasting programs, and troubleshooted and fixed any problems that arose. Additionally, I collaborated with the IT team to integrate broadcasting programs with other systems, ensuring seamless operation.',
     tasks: [
       {
