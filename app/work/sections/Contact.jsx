@@ -45,7 +45,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={`${styles.yPaddings} px-32 h-[500px] relative`}>
+    <section className={`${styles.yPaddings} px-32 h-[500px] relative flex justify-center`}>
       <div className="absolute bottom-10 w-[800px] h-[400px] -rotate-[10deg] royal-blue-gradient opacity-50"/>
       <div className="absolute -left-20 bottom-32 w-[800px] h-[300px] -rotate-[10deg] lime-gradient"/>
       <div className={`${styles.innerWidth} mx-auto flex justify-center absolute z-10`}>

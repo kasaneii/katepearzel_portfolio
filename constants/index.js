@@ -14,6 +14,11 @@ export const navLinks = [
     link: 'Contact',
     url: 'mailto:pearzelkate1300@gmail.com',
   },
+  {
+    id: 'resume',
+    link: 'My Resume',
+    url: '/resume',
+  },
 ];
 
 export const footerLinks = [
@@ -35,6 +40,20 @@ export const footerLinks = [
 ]
 
 export const recentWorks = [
+  {
+    id: 'e-commerce',
+    title: 'Groovy Paddle',
+    category: 'E-commerce Website',
+    imgUrl: '/groovy-paddle.png',
+    url: 'https://wondrous-slides-401868.framer.app/'
+  },
+  {
+    id: 'food',
+    title: 'Sauces By JRK!',
+    category: 'Product Landing Page',
+    imgUrl: '/sauces-by-jrk.png',
+    url: 'https://www.figma.com/proto/XLZ0dWWxu9z0hdvMG4OKvu/Sauces-by-Jrk!?page-id=0%3A1&node-id=224-973&viewport=125%2C-812%2C0.12&t=sBVZkqumqD0ljJtT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=224%3A973'
+  },
   {
     id: 'beauty',
     title: 'Pink Parlour',
@@ -93,11 +112,6 @@ export const designTools = [
     imgUrl: '/tools/figma.png',
   },
   {
-    id: 'adobeXd',
-    title: 'Adobe XD',
-    imgUrl: '/tools/experience.png',
-  },
-  {
     id: 'penAndPaper',
     title: 'Pen & Paper',
     imgUrl: '/tools/edit.png',
@@ -116,14 +130,19 @@ export const devTools = [
     imgUrl: '/tools/tailwind-css.png',
   },
   {
-    id: 'wordpress',
-    title: 'WordPress',
-    imgUrl: '/tools/wordpress.png',
-  },
-  {
     id: 'webflow',
     title: 'Webflow',
     imgUrl: '/tools/webflow.png',
+  },
+  {
+    id: 'wix',
+    title: 'Wix',
+    imgUrl: '/tools/wix.svg',
+  },
+  {
+    id: 'wordpress',
+    title: 'WordPress',
+    imgUrl: '/tools/wordpress.png',
   },
   {
     id: 'shopify',
@@ -141,24 +160,14 @@ export const devTools = [
     imgUrl: '/tools/nextjs.png',
   },
   {
-    id: 'swiperJs',
-    title: 'Swiper JS',
-    imgUrl: '/tools/swiperjs.png',
-  },
-  {
-    id: 'framerMotion',
-    title: 'Framer Motion',
-    imgUrl: '/tools/framer-motion.png',
+    id: 'framer',
+    title: 'Framer',
+    imgUrl: '/tools/framer.svg',
   },
   {
     id: 'gsap',
     title: 'GSAP',
     imgUrl: '/tools/gsap.png',
-  },
-  {
-    id: 'barbaJs',
-    title: 'Barba JS',
-    imgUrl: '/tools/barbajs.png',
   },
   {
     id: 'gitHub',
@@ -198,7 +207,7 @@ export const experiences = [
   {
     company: 'Web Outsourcing Gateway',
     position: 'UI/UX Designer and Developer',
-    date: 'Present',
+    date: '2024',
     description: "At Web Outsourcing Gateway, I collaborated with cross-functional teams to design and develop user-centric web solutions, blending UI/UX design and front-end development expertise to enhance client satisfaction.",
     tasks: [
       {
