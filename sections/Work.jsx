@@ -118,7 +118,7 @@ const Work = () => {
             <img src="/rec.png" className="xl:w-[20px] xl:h-[20px] 2xl:w-[30px] 2xl:h-[30px] object-contain drop-shadow-lg"/>
           </div>
           <div ref={aboutContainerRef}>
-            <Link href='/about'>
+            <Link href='https://www.figma.com/proto/YFpobtsiqQbx6Ezyqfxs7w/My-Portfolio?page-id=564%3A378&node-id=564-7857&p=f&viewport=569%2C83%2C0.03&t=th4y4waJsNIllIre-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=564%3A7857'>
               <button
               ref={aboutButtonRef}
               onMouseEnter={aboutBtnMouseEnter}
@@ -127,7 +127,7 @@ const Work = () => {
               className={`${styles.flexCenter} w-[200px] h-[200px] bg-codgray rounded-full cursor-pointer relative overflow-hidden`}>
                 <div ref={aboutBlueRef} className='w-[300px] h-[300px] rounded-full bg-royalblue absolute -translate-y-[100%]'></div>
                 <div ref={aboutTextRef} className='w-full h-full flex items-center justify-center absolute'>
-                  <p className="text-ivory">About me</p>
+                  <p className="text-ivory">Visit My Figma</p>
                 </div>
               </button>
             </Link>
