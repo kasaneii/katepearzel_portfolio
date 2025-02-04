@@ -112,9 +112,52 @@ const Project = () => {
           <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
               <div>
+                <h2 className='xl:text-[40px] 2xl:text-[56px]'>Syntherra</h2>
+                <h3 className='2xl:text-[20px]'>Crypto & AI Landing Page</h3>
+                <ul className='pt-4 w-full flex flex-wrap gap-2'>
+                  <li className='w-[180px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Development</li>
+                  <li className='w-[112px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>React JS</li>
+                  <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Tailwind CSS</li>
+                  <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2025</li>
+                </ul>
+              </div>
+              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                <img src="/syntherra.png" alt="" className='w-full h-full object-cover' />
+              </div>
+            </div>
+            <Link href='https://syntherra.xyz/'>
+              <ImageContainer imageUrl='/projects/syntherra-pages.png' bgColor='bg-[#552F1D]' />
+            </Link>
+          </div>
+          <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
+            <Link href='https://ethereonnexus.cloud/'>
+              <ImageContainer imageUrl='/projects/ethereon-nexus-pages.png' bgColor='bg-[#16161E]' />
+            </Link>
+            <div className='flex flex-col justify-center gap-10 text-codgray'>
+              <div className='text-right'>
+                <h2 className='xl:text-[40px] 2xl:text-[56px]'>Ethereon Nexus</h2>
+                <h3 className='2xl:text-[20px]'>Crypto & AI Landing Page</h3>
+                <ul className='pt-4 w-full flex justify-end flex-wrap gap-2'>
+                  <li className='w-[180px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Development</li>
+                  <li className='w-[112px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>React JS</li>
+                  <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Tailwind CSS</li>
+                  <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2025</li>
+                </ul>
+              </div>
+              <div className='w-full flex justify-end'>
+                <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                  <img src="/ethereon-nexus.png" alt="" className='w-full h-full object-cover' />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
+            <div className='flex flex-col justify-center gap-10 text-codgray'>
+              <div>
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Groovy Paddle</h2>
                 <h3 className='2xl:text-[20px]'>E-commerce Website</h3>
                 <ul className='pt-4 w-full flex flex-wrap gap-2'>
+                  <li className='w-[148px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Web Design</li>
                   <li className='w-[112px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Framer</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2024</li>
                 </ul>
@@ -151,6 +194,8 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Pink Parlour</h2>
                 <h3 className='2xl:text-[20px]'>Beauty Service Marketing Website</h3>
                 <ul className='pt-4 w-full flex flex-wrap gap-2'>
+                  <li className='w-[120px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Redesign</li>
+                  <li className='w-[80px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Wix</li>
                   <li className='w-[120px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Shopify</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2024</li>
                 </ul>
@@ -172,6 +217,7 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Oh!Jobs.ph</h2>
                 <h3 className='2xl:text-[20px]'>Job Listing Website</h3>
                 <ul className='pt-4 w-full flex justify-end gap-2'>
+                  <li className='w-[156px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Design & Dev</li>
                   <li className='w-[180px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>HTML/CSS/JS</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2024</li>
                 </ul>
@@ -187,6 +233,8 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>IEMOP</h2>
                 <h3 className='2xl:text-[20px]'>Corporate and Marketing Website</h3>
                 <ul className='pt-4 w-full flex gap-2'>
+                  <li className='w-[156px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Maintenance</li>
+                  <li className='w-[156px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Wordpress</li>
                   <li className='w-[180px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>HTML/CSS/JS</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2024</li>
                 </ul>
@@ -208,13 +256,16 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Techsourcify</h2>
                 <h3 className='2xl:text-[20px]'>Techsupport Landing Page</h3>
                 <ul className='pt-4 w-full flex justify-end gap-2'>
+                  <li className='w-[156px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Design & Dev</li>
                   <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Tailwind CSS</li>
                   <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>JavaScript</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2023</li>
                 </ul>
               </div>
-              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
-                <img src="/techsourcify.png" alt="" className='w-full h-full object-cover' />
+              <div className='w-full flex justify-end'>
+                <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                  <img src="/techsourcify.png" alt="" className='w-full h-full object-cover' />
+                </div>
               </div>
             </div>
           </div>
@@ -224,8 +275,8 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Upcountry Manpower Agency</h2>
                 <h3 className='2xl:text-[20px]'>Manpower Agency Landing Page</h3>
                 <ul className='pt-4 w-full flex gap-2'>
-                  <li className='w-[172px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Custom Code</li>
-                  <li className='w-[232px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Wordpress for CMS</li>
+                  <li className='w-[256px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Theme Customization</li>
+                  <li className='w-[156px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Wordpress</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2023</li>
                 </ul>
               </div>
@@ -246,6 +297,7 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Maxsupport</h2>
                 <h3 className='2xl:text-[20px]'>Agency and Marketing Landing Page</h3>
                 <ul className='pt-4 w-full flex justify-end gap-2'>
+                  <li className='w-[156px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Maintenance</li>
                   <li className='w-[180px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>HTML/CSS/JS</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2023</li>
                 </ul>
@@ -261,6 +313,7 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Adam Johnson</h2>
                 <h3 className='2xl:text-[20px]'>Creative Photography Portfolio</h3>
                 <ul className='pt-4 w-full flex gap-2'>
+                  <li className='w-[156px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Design & Dev</li>
                   <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Tailwind CSS</li>
                   <li className='w-[116px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Next JS</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2023</li>
@@ -295,17 +348,18 @@ const Project = () => {
           </div> */}
           <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
+              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                <img src="/architecte.png" alt="" className='w-full h-full object-cover' />
+              </div>
               <div>
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>Architecte</h2>
                 <h3 className='2xl:text-[20px]'>Architecture Landing Page</h3>
                 <ul className='pt-4 w-full flex gap-2'>
+                  <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Development</li>
                   <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Tailwind CSS</li>
                   <li className='w-[128px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>React JS</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2023</li>
                 </ul>
-              </div>
-              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
-                <img src="/architecte.png" alt="" className='w-full h-full object-cover' />
               </div>
             </div>
             <Link href='https://architecte-liard.vercel.app/'>
@@ -321,13 +375,16 @@ const Project = () => {
                 <h2 className='xl:text-[40px] 2xl:text-[56px]'>The Muse <br/> Collective</h2>
                 <h3 className='2xl:text-[20px]'>Creative Agency Landing Page</h3>
                 <ul className='pt-4 w-full flex justify-end gap-2'>
+                  <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Development</li>
                   <li className='w-[164px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Tailwind CSS</li>
                   <li className='w-[128px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>Next JS</li>
                   <li className='w-[96px] py-1.5 border-[1px] border-mineshaft rounded-full text-center 2xl:text-[16px]'>2023</li>
                 </ul>
               </div>
-              <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
-                <img src="/the-muse-collective.png" alt="" className='w-full h-full object-cover' />
+              <div className='w-full flex justify-end'>
+                <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
+                  <img src="/the-muse-collective.png" alt="" className='w-full h-full object-cover' />
+                </div>
               </div>
             </div>
           </div>
