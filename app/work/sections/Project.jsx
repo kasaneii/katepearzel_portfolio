@@ -122,7 +122,7 @@ const Project = () => {
                 </ul>
               </div>
               <div className='xl:w-[400px] 2xl:w-[500px] box-shadow'>
-                <img src="/syntherra.png" alt="" className='w-full h-full object-cover' />
+                <img src="/Syntherra.png" alt="" className='w-full h-full object-cover' />
               </div>
             </div>
             <Link href='https://syntherra.xyz/'>
