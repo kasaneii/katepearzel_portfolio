@@ -289,7 +289,7 @@ const Project = () => {
             </Link>
           </div>
           <div className='flex justify-between border-b-2 border-opacity-50 border-mineshaft pb-20'>
-            <Link href='https://maxsupport.com.ph/'>
+            <Link href='https://maxsupport.com.ph/max-2022'>
               <ImageContainer imageUrl='/projects/maxsupport-pages.png' bgColor='bg-[#C0051C]' />
             </Link>
             <div className='flex flex-col justify-center gap-10 text-codgray'>
